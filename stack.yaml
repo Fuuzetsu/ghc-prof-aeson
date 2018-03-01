@@ -1,0 +1,7 @@
+resolver: lts-10.7
+packages:
+- .
+
+nix:
+  shell-file: shell.nix
+  path: ["nixpkgs=./nixpkgs.nix"]

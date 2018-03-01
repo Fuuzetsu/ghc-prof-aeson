@@ -1,0 +1,15 @@
+# ghc-prof-aeson
+
+Somewher along the way in GHC 8.2.x it became possible to output
+[profiling output in JSON
+form](https://downloads.haskell.org/~ghc/8.2.2/docs/html/users_guide/profiling.html#json-profile-format).
+This is much more friendly for tooling as usual profiling format
+differs based the exact flags, identifier names, nesting, heap
+profiling flags and phase of the moon. More than once have we fallen
+to a [parse failure in
+ghc-prof-flamegraph](https://github.com/fpco/ghc-prof-flamegraph/issues/10).
+
+This is a very simple package that parses the profiling JSON output
+and gives you a Haskell data structure to work with instead. This
+should completely remove random parse failures due to weird formatting
+or at the very least, provide better error messages.
