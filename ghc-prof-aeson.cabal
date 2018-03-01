@@ -1,6 +1,7 @@
 name:           ghc-prof-aeson
 version:        0.1.0.0
-description:    Parser for GHC's JSON profiling output.
+synopsis:       Parser for GHC's JSON profiling output.
+description:    Parser for GHC's JSON profiling output produced by `-pj`.
 homepage:       https://github.com/Fuuzetsu/ghc-prof-aeson#readme
 bug-reports:    https://github.com/Fuuzetsu/ghc-prof-aeson/issues
 author:         Mateusz Kowalczyk
@@ -10,6 +11,7 @@ license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
 cabal-version:  >= 1.10
+category:       Profiling
 
 extra-source-files:
     ChangeLog.md
