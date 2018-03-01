@@ -18,7 +18,7 @@ main = hspec $ do
         let er :: Either String GhcProfile
             er = A.eitherDecode' ghcManualSample
         in er `shouldSatisfy`
-             (\x -> case x of { Left{}; -> False; Right{} -> True })
+             (\x -> case x of { Left{} -> False; Right{} -> True })
 
 ghcManualSample :: BSL.ByteString
 ghcManualSample = fromString $ Prelude.unlines
