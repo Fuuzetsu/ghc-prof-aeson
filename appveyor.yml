@@ -12,8 +12,22 @@ environment:
   global:
     STACK_ROOT: "c:\\sr"
 
+  - RESOLVER: ""
+  - RESOLVER: "--resolver lts-2"
+  - RESOLVER: "--resolver lts-3"
+  - RESOLVER: "--resolver lts-6"
+  - RESOLVER: "--resolver lts-7"
+  - RESOLVER: "--resolver lts-9"
+  - RESOLVER: "--resolver lts-10"
+  - RESOLVER: "--resolver lts-nightly"
+    ALLOW_FAILURE: "TRUE"
+
+matrix:
+  allow_failures:
+    - ALLOW_FAILURE: "TRUE"
+
 test_script:
-- stack setup > nul
+- stack setup $RESOLVER > nul
 # The ugly echo "" hack is to avoid complaints about 0 being an invalid file
 # descriptor
-- echo "" | stack --no-terminal test
+- echo "" | stack --no-terminal $RESOLVER test
