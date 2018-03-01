@@ -1,4 +1,4 @@
-# ghc-prof-aeson
+# ghc-prof-aeson [![Build Status](https://travis-ci.org/Fuuzetsu/ghc-prof-aeson.svg?branch=master)](https://travis-ci.org/Fuuzetsu/ghc-prof-aeson)
 
 Somewhere along the way in GHC 8.2.x it became possible to output
 [profiling output in JSON
