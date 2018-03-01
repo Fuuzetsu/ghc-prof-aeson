@@ -28,7 +28,6 @@ matrix:
     - ALLOW_FAILURE: "TRUE"
 
 test_script:
-- stack setup $RESOLVER > nul
 # The ugly echo "" hack is to avoid complaints about 0 being an invalid file
 # descriptor
 - echo "" | stack --no-terminal $RESOLVER test
