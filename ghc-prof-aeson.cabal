@@ -22,7 +22,7 @@ source-repository head
 library
   exposed-modules: Profiling.GHC.Aeson
   hs-source-dirs: src
-  build-depends: base >=4.7 && <5,
+  build-depends: base >=4.3 && <5,
                  aeson,
                  text,
                  vector
