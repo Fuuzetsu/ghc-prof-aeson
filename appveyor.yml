@@ -15,7 +15,9 @@ environment:
   matrix:
     - RESOLVER: ""
     - RESOLVER: "--resolver lts-2"
+      ALLOW_FAILURE: "TRUE"
     - RESOLVER: "--resolver lts-3"
+      ALLOW_FAILURE: "TRUE"
     - RESOLVER: "--resolver lts-6"
     - RESOLVER: "--resolver lts-7"
     - RESOLVER: "--resolver lts-9"
