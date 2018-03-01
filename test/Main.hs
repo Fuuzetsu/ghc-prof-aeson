@@ -6,7 +6,6 @@ module Main (main, ghcManualSample) where
 
 import qualified Data.Aeson as A
 import qualified Data.ByteString.Lazy as BSL
-import           Data.Either (isRight)
 import           Test.Hspec
 import           Data.String (fromString)
 import           Profiling.GHC.Aeson (GhcProfile)
@@ -18,7 +17,8 @@ main = hspec $ do
       it "Parses GHC manual example." $
         let er :: Either String GhcProfile
             er = A.eitherDecode' ghcManualSample
-        in er `shouldSatisfy` isRight
+        in er `shouldSatisfy`
+             (\x -> case x of { Left{} -> False; Right{} -> True })
 
 ghcManualSample :: BSL.ByteString
 ghcManualSample = fromString $ Prelude.unlines

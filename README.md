@@ -1,4 +1,4 @@
-# ghc-prof-aeson [![Build Status](https://travis-ci.org/Fuuzetsu/ghc-prof-aeson.svg?branch=master)](https://travis-ci.org/Fuuzetsu/ghc-prof-aeson)
+# ghc-prof-aeson [![Build Status][travisbadge]][travisurl] [![Build Status][appbadge]][appurl]
 
 Somewhere along the way in GHC 8.2.x it became possible to output
 [profiling output in JSON
@@ -13,3 +13,8 @@ This is a very simple package that parses the profiling JSON output
 and gives you a Haskell data structure to work with instead. This
 should completely remove random parse failures due to weird formatting
 or at the very least, provide better error messages.
+
+[travisbadge]: https://travis-ci.org/Fuuzetsu/ghc-prof-aeson.svg?branch=master
+[travisurl]: https://travis-ci.org/Fuuzetsu/ghc-prof-aeson
+[appbadge]: https://ci.appveyor.com/api/projects/status/github/gruntjs/grunt?branch=master&svg=true
+[appurl]: https://ci.appveyor.com/project/Fuuzetsu/ghc-prof-aeson

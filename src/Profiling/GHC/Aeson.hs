@@ -9,12 +9,13 @@ module Profiling.GHC.Aeson
   , GhcProfile(..)
   ) where
 
+import qualified Data.Aeson as A (FromJSON(..), genericParseJSON)
+import qualified Data.Aeson.Types as A (defaultOptions, fieldLabelModifier)
+import           Data.List (stripPrefix)
+import           Data.Maybe (fromMaybe)
 import qualified Data.Text as T
 import qualified Data.Vector as V
-import qualified Data.Aeson as A
-import GHC.Generics (Generic)
-import Data.List (stripPrefix)
-import Data.Maybe (fromMaybe)
+import           GHC.Generics (Generic)
 
 -- | Drops the given prefix from an aeson field name. Returns the
 -- original field name if the prefix does not match exactly.
