@@ -1,6 +1,6 @@
 # ghc-prof-aeson
 
-Somewher along the way in GHC 8.2.x it became possible to output
+Somewhere along the way in GHC 8.2.x it became possible to output
 [profiling output in JSON
 form](https://downloads.haskell.org/~ghc/8.2.2/docs/html/users_guide/profiling.html#json-profile-format).
 This is much more friendly for tooling as usual profiling format
