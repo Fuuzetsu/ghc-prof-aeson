@@ -34,7 +34,7 @@ test-suite ghc-prof-aeson-test
   main-is: Main.hs
   hs-source-dirs: test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
-  build-depends: base >=4.7 && <5
+  build-depends: base >=4.3 && <5
                , aeson
                , bytestring
                , ghc-prof-aeson
