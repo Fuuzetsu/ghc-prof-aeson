@@ -16,5 +16,5 @@ or at the very least, provide better error messages.
 
 [travisbadge]: https://travis-ci.org/Fuuzetsu/ghc-prof-aeson.svg?branch=master
 [travisurl]: https://travis-ci.org/Fuuzetsu/ghc-prof-aeson
-[appbadge]: https://ci.appveyor.com/api/projects/status/github/gruntjs/grunt?branch=master&svg=true
+[appbadge]: https://ci.appveyor.com/api/projects/status/github/Fuuzetsu/ghc-prof-aeson?branch=master&svg=true
 [appurl]: https://ci.appveyor.com/project/Fuuzetsu/ghc-prof-aeson
